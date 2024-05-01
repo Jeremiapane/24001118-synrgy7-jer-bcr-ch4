@@ -1,12 +1,13 @@
 {
-  "name": "binar-fsw-challenge-04",
+  "name": "challenge_4",
   "version": "1.0.0",
-  "description": "Project HTTP Server dan DOM",
-  "main": "server/index.js",
-  "author": "Fikri Rahmat Nurhidayat <fnurhidayat@binar.co.id>",
-  "license": "MIT",
-  "private": false,
+  "description": "Binar Challenge 4",
+  "main": "index.js",
   "scripts": {
-    "start": "node server/index.js"
-  }
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
 }
