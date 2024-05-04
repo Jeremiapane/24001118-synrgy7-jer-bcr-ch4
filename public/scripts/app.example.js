@@ -42,14 +42,14 @@ class App {
         const timeValue = this.timeInput.value;
 
         // Parsing tanggal dan waktu dari input
-        const tanggalDanWaktu = new Date(dateValue + "T" + timeValue + ":00.000Z");
+        const orderDate = new Date(dateValue + "T" + timeValue + ":00.000Z");
 
         // Ambil data mobil dari local storage
         const localData = localStorage.getItem("CARS");
         const newData = JSON.parse(localData);
 
         // Filter mobil yang sesuai dengan input pengguna
-        const res = newData.filter((car) => car.tipeDriver === driverValue && new Date(car.availableAt) < tanggalDanWaktu);
+        const res = newData.filter((car) => car.tipeDriver === driverValue && new Date(car.availableAt) < orderDate);
 
         console.log(newData);
         console.log(res);
