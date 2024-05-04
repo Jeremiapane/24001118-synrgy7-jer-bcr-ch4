@@ -431,78 +431,130 @@ footer .address {
     width: 268px;
 }
 
-/* page 2 */
-.searchForm {
+/* Page 2 */
+
+.search-component {
     position: absolute;
-    background-color: #fff;
     top: 458px;
-    left: 196px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
-.wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
+    right: 197px;
+    width: 1047px;
     height: 106px;
-    box-shadow: 0px 0px 10px 0px #00000026;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px #00000026;
 }
-.searchForm form {
-    font-size: 12px;
+.search-wrapper {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: row;
+    padding: 24px;
     gap: 16px;
-}
-.wrapper div {
-    display: flex;
-    flex-direction: column;
-    width: 215px;
-    padding: 0;
-    gap: 4px;
-}
-.searchForm input,
-.searchForm select {
-    width: 100%;
-    height: 36px;
-}
-.form-select {
-    font-size: 12px;
+    align-items: center;
 }
 
-select option {
-    min-height: 38px !important;
+.search-wrapper div {
+    width: 210px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
-.searchForm button {
+
+.search-wrapper div label {
+    font-family: "Rubik";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+    color: #3c3c3c;
+}
+
+.search-wrapper button {
     height: 36px;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    margin-top: 16px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
-.amountPicker input {
+.search-wrapper div input {
+    padding: 12px 9px;
+    color: #000;
+    font-size: 12px;
     width: 210px;
     height: 36px;
     box-sizing: border-box;
-    background-image: url(../icons/fi_users.svg);
     background-repeat: no-repeat;
     background-position: 180px 9px;
     background-size: 18px;
+    border: 1px solid #d0d0d0;
+    background-size: 18px;
 }
 
-.productResult .card {
-    width: 333px;
+select {
+    padding: 0 9px;
+    color: #000;
+    font-size: 12px;
+    width: 210px;
+    height: 36px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: 180px 9px;
+    background-size: 18px;
+    border: 1px solid #d0d0d0;
+    background-size: 18px;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.jumlah-penumpang input {
+    background-image: url(../icons/fi_users.png);
+}
+.tanggal-pemesanan input {
+    background-image: url(../icons/fi_calendar.png);
+}
+.waktu-pemesanan input {
+    background-image: url(../icons/fi_clock.png);
+}
+#cars-container .card .top {
+    display: grid;
+    gap: 8px;
+}
+
+#cars-container .card {
+    padding: 24px;
+    gap: 24px;
+    min-width: 333px;
+    min-height: 650px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.search-result {
+    padding: 0;
+}
+
+#cars-container .card button {
+    text-align: center;
+    width: 100%;
+    height: 48px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 222px;
+    object-fit: cover;
 }
